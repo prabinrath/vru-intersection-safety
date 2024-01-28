@@ -294,7 +294,7 @@ def evaluate_intersection_metrics(leader_tracklet, follower_tracklet, info):
     plt.show()
     
 
-data_id = 4
+data_id = 1
 with open(f'hesai_millave_{data_id}_pvrcnn.json', 'r') as fp:
     # Subject vehicle is the AV, Prioritized vehicle is the AV, Follower is the AV
     # Other is vehicle/pedestrian, Non prioritized is vehicle/pedestrian, Leader is the vehicle/pedestrian
@@ -304,22 +304,14 @@ with open(f'hesai_millave_{data_id}_pvrcnn.json', 'r') as fp:
     ## hesai_millave_4_pvrcnn
     
     # potential collision
-    leader = '4621' 
-    follower = '4740'
+    # leader = '4621' 
+    # follower = '4740'
 
     # leader = '10590' 
     # follower = '8110'
 
     # leader = '1500' 
     # follower = '1360'
-    
-    ## hesai_millave_2_pvrcnn
-
-    # leader = '980' 
-    # follower = '1090'
-
-    # leader = '431' 
-    # follower = '1170'
 
     ## hesai_millave_1_pvrcnn
 
@@ -327,8 +319,8 @@ with open(f'hesai_millave_{data_id}_pvrcnn.json', 'r') as fp:
     # follower = '0'
 
     # potential collision
-    # leader = '1300' 
-    # follower = '2220'
+    leader = '1300' 
+    follower = '2220'
     
     tracklets = json.load(fp)
     leader_tracklet = tracklets[leader]

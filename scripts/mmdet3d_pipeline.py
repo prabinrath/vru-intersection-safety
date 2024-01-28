@@ -22,7 +22,7 @@ node = rclpy.create_node('evsts_pipeline')
 thread = threading.Thread(target=rclpy.spin, args=(node, ), daemon=True)
 thread.start()
 user = 'user'
-handle = Bag2PointCloud(f'/{user}/home/Datasets/Hesai/hesai_mill_ave_1', '/hesai/pandar_points')
+handle = Bag2PointCloud(f'/home/{user}/Datasets/Hesai/hesai_mill_ave_1', '/hesai/pandar_points')
 
 frame_id = 'PandarSwift'
 lidar = 'hesai_bag' # type of data packet for rosnumpy conversions
@@ -34,8 +34,8 @@ rate = node.create_rate(10)
 # config_file = 'mmdet3d/configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-3class.py'
 # checkpoint_file = 'mmdet3d/checkpoints/hv_pointpillars_secfpn_6x8_160e_kitti-3d-3class_20220301_150306-37dc2420.pth'
 
-config_file = 'mmdet3d/configs/pv_rcnn/pv_rcnn_8xb2-80e_kitti-3d-3class.py'
-checkpoint_file = 'mmdet3d/pv_rcnn_8xb2-80e_kitti-3d-3class_20221117_234428-b384d22f.pth'
+config_file = 'scripts/mmdet3d/configs/pv_rcnn/pv_rcnn_8xb2-80e_kitti-3d-3class.py'
+checkpoint_file = 'scripts/mmdet3d/pv_rcnn_8xb2-80e_kitti-3d-3class_20221117_234428-b384d22f.pth'
 
 model = init_model(config_file, checkpoint_file, device='cuda:0')
 

@@ -78,7 +78,7 @@ def calculate_metrics(cross_point, leader_pos, leader_vel, follower_pos, followe
 # Other is vehicle/pedestrian, Non prioritized is vehicle/pedestrian, Leader is the vehicle/pedestrian
 
 user = 'user'
-ids = [1,2,3,4]
+ids = [1,4]
 
 total_veh_veh_situs = 0
 total_veh_veh_petv = 0
@@ -142,6 +142,8 @@ for data_id in ids:
                                                 obj['position'][1]+obj['velocity'][1]*horizon), local_range, img_half_dim)
                     cv2.arrowedLine(canvas, back_point, proj_point, (255, 0, 0), 2)
 
+            # this loop is O(N^2) as it is for offline computation. online version has the N(log(N)) algorithm
+            # that will be released in future. 
             for i in range(len(objs)):
                 for j in range(i+1,len(objs)):
                     if not (objs[i]['label'] == 'ped' and objs[j]['label'] == 'ped'):
