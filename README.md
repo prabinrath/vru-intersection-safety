@@ -1,7 +1,7 @@
 # vru-intersection-safety
 This is the official repository for the SAE 24 paper [Evaluating Safety Metrics for Vulnerable Road Users at Urban Traffic Intersections Using High-Density Infrastructure LiDAR System](https://www.sae.org/publications/technical-papers/content/2024-01-2641/).
 
-The scripts were successfully tested on an Ubuntu 22.04 system with Intel i9 13th Gen processor, NVIDIA GPU RTX 4090 GPU and 500 GB of disk space.
+The scripts were successfully tested on an Ubuntu 22.04 system with Intel i9 13th Gen processor, NVIDIA RTX 4090 GPU and 500 GB of disk space.
 
 Project resources can be found at [this](https://arizonastateu-my.sharepoint.com/personal/prath4_sundevils_asu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fprath4%5Fsundevils%5Fasu%5Fedu%2FDocuments%2FSAE%5FWCX%5F2024%5FScenarios&ga=1) link.
 
