@@ -6,8 +6,8 @@ The scripts were successfully tested on an Ubuntu 22.04 system with Intel i9 13t
 Project resources can be found at [this](https://arizonastateu-my.sharepoint.com/personal/prath4_sundevils_asu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fprath4%5Fsundevils%5Fasu%5Fedu%2FDocuments%2FSAE%5FWCX%5F2024%5FScenarios&ga=1) link.
 
 <div style="display:flex;">
-  <img src="./media/car_ped.png" alt="Left Image" style="width:33%;">
-  <img src="./media/car_car.png" alt="Left Image" style="width:33%;">
+  <img src="./media/car_ped.png" alt="Left Image" style="width:40%;">
+  <img src="./media/car_car.png" alt="Left Image" style="width:40%;">
 </div>
 
 ## setup conda env
