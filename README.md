@@ -35,7 +35,7 @@ python mmdet3d_pipeline.py
 rviz2 -d scripts/rviz/hesai_viz.rviz
 ```
 
-Specific entity interactions and metrics evaluation can be visualized using the following script. Look at the rviz screen to pointout two entities of interest and specify them in the script to visualize their interaction.
+Specific entity interactions and metrics evaluation can be visualized using the following script. In the previous step, look at the rviz screen to point out tracking IDs of two entities of interest and specify them in the script to visualize their interaction.
 ```
 # run from project root folder. specify your user in the script before running. specify data_id (1 for millave_1 and 4 for millave_4) in the script before running. keep the rviz screen open to see the interaction in 3D pointcloud.
 python safety_metrics_viz.py
